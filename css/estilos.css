@@ -1,0 +1,15 @@
+body{
+    background-color: #e8f8ff ;
+}
+
+textarea{
+    background-color: transparent;
+    border: none;
+    outline:none;
+    scrollbar-arrow-color: #000066;
+    scrollbar-base-color: #000033;
+    scrollbar-track-color: #666633;
+    scrollbar-face-color: #cc9933;
+    scrollbar-shadow-color: #DDDDDD;
+    scrollbar-highlight-color: #CCCCCC;
+}
