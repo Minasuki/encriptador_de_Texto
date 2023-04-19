@@ -12,7 +12,7 @@
     });
 
     copiar.addEventListener('click', () => {
-        copiarAlPortapapeles;
+        copiarAlPortapapeles();
     });
 })();
 
@@ -98,7 +98,7 @@ function ajaxInfo(boleano) {
 }
 
 function copiarAlPortapapeles() {
-
-    var text = document.getElementById("info").value;
-    clipboard.writeText(text);
+    let text = document.getElementById("info");
+    navigator.clipboard.writeText(text.textContent);
+    console.log('as');
 }
