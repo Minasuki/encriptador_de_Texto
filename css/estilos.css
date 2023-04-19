@@ -5,7 +5,8 @@ body{
 textarea{
     background-color: transparent;
     border: none;
-    outline:none;
+
+    
     scrollbar-arrow-color: #000066;
     scrollbar-base-color: #000033;
     scrollbar-track-color: #666633;
