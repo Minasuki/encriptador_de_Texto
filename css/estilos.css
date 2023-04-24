@@ -21,6 +21,19 @@ main {
     max-width: 100%;
 }
 
+main > .flex__contenedor{
+    flex: 0 0 33.33333333%;
+    max-width: 79.7%;
+}
+
+main > *{
+    max-width: 100%;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+  }
+
 .container {
     width: 90%;
     max-width: 120px;
@@ -44,22 +57,14 @@ textarea {
     scrollbar-highlight-color: #CCCCCC;
 }
 
-.texto__a__ingresar {
-    border: 0 solid blanchedalmond;
+.info__a__ingresar {
     background: #90a8cf;
-    padding: 20px;
-    width: 70%;
+
 }
 
-.texto__a__mostrar {
+.info__a__mostrar {
 
     background: #eb73ef;
-    padding: 20px;
-    width: 30%;
-    height: 90%;
-    position: relative;
-    right: -70%;
-    top: 0;
 }
 
 .flexBox {
