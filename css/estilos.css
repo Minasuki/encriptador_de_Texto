@@ -5,17 +5,31 @@
     --color-title: #001A49;
 }
 
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
+    max-width: 100%;
+}
+
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 120px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
 }
 
-body {
-background-color: white;
-}
+
 
 textarea {
     background-color: transparent;
@@ -29,20 +43,32 @@ textarea {
     scrollbar-shadow-color: #DDDDDD;
     scrollbar-highlight-color: #CCCCCC;
 }
-.texto__a__ingresar{
-    border: 1px solid blanchedalmond;
+
+.texto__a__ingresar {
+    border: 0 solid blanchedalmond;
     background: #90a8cf;
     padding: 20px;
+    width: 70%;
 }
-.texto__a__mostrar{
-    border: 1px solid blanchedalmond;
+
+.texto__a__mostrar {
+
     background: #eb73ef;
     padding: 20px;
+    width: 30%;
+    height: 90%;
+    position: relative;
+    right: -70%;
+    top: 0;
 }
-.flexBox{
-    border: 1px solid blanchedalmond;
+
+.flexBox {
+    border: 0 solid blanchedalmond;
     background: #ccc;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 .btn {
