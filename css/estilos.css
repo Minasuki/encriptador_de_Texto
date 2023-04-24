@@ -5,6 +5,7 @@
     --color-title: #001A49;
 }
 
+/* ///////////////////  CSS para no tener scrol  //////////////////// */
 html,
 body {
     padding: 0;
@@ -16,39 +17,72 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     min-height: 100%;
     max-width: 100%;
 }
 
-main > .flex__contenedor{
-    flex: 0 0 33.33333333%;
-    max-width: 79.7%;
+/* //////////////////////////////////////////////////////////////////// */
+
+main>.logo {
+    flex: 0 0 5%;
+
 }
 
-main > *{
+main>.info__a__ingresar {
+    flex: 0 0 60%;
+
+}
+
+main>.info__a__mostrar {
+    flex: 0 0 45%;
+
+}
+
+main>* {
     max-width: 100%;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
-  }
-
-.container {
-    width: 90%;
-    max-width: 120px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
 }
 
+.info__a__ingresar,
+.info__a__mostrar,
+.logo,
+.botones {
+    display: flex;
+}
+
+.logo {
+    background-color: #DDDDDD;
+    padding-top: 5%;
+}
+
+.info__a__ingresar {
+    background: #77acdf;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 5% 3% 3%;
+}
+
+.info__a__mostrar {
+    background: #77acdf;
+    flex-direction: column;
+    min-height: 100%;
+    background: #eb73ef;
+}
+
+.botones {
+    justify-content: center;
+}
 
 
 textarea {
     background-color: transparent;
     border: none;
-
-
     scrollbar-arrow-color: #000066;
     scrollbar-base-color: #000033;
     scrollbar-track-color: #666633;
@@ -57,25 +91,7 @@ textarea {
     scrollbar-highlight-color: #CCCCCC;
 }
 
-.info__a__ingresar {
-    background: #90a8cf;
-
-}
-
-.info__a__mostrar {
-
-    background: #eb73ef;
-}
-
-.flexBox {
-    border: 0 solid blanchedalmond;
-    background: #ccc;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    width: 70%;
-}
-
+/* ///////////////////////  CSS Para Los Botones  ////////////////////////// */
 .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
