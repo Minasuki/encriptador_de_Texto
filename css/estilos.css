@@ -24,19 +24,18 @@ main {
 
 /* ///////////////////////////  CSS para definir los tamaños de las cajas  ////////////////////////////////////// */
 
-/*  Logo definido  */
 main>.logo {
     flex: 0 0 10%;
 
 }
-/*////////////////*/
+
 main>.info__a__ingresar {
     flex: 0 0 60%;
 
 }
 
 main>.info__a__mostrar {
-    flex: 0 0 40%;
+    flex: 0 0 30%;
 
 }
 
@@ -59,27 +58,36 @@ main>* {
 
 .logo {
     flex-direction: column;
-    padding-top: 5%;
+    padding-top: 10% 10% 0;
+    background-position: top;
+    
+    
 }
-
+.posicion__logo{
+    max-width:100%;
+    width: 80px;
+    height: 80px;
+}
 .info__a__ingresar {
     background: #77acdf;
     flex-direction: column;
-    min-height: 100%;
     padding: 5% 3% 3%;
 }
 
 .info__a__mostrar {
-    background: #77acdf;
     flex-direction: column;
-    min-height: 100%;
+    
     background: #eb73ef;
+
 }
 
 .botones {
     justify-content: center;
 }
 
+.parrafo{
+    text-align:left;
+}
 
 textarea {
     background-color: transparent;
