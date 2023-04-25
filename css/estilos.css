@@ -48,6 +48,7 @@ main>* {
 ::after {
     box-sizing: border-box;
 }
+
 /* //////////////////////////////////////////////////////////////////// */
 .info__a__ingresar,
 .info__a__mostrar,
@@ -60,14 +61,16 @@ main>* {
     flex-direction: column;
     padding-top: 10% 10% 0;
     background-position: top;
-    
-    
+
+
 }
-.posicion__logo{
-    max-width:100%;
+
+.posicion__logo {
+    max-width: 100%;
     width: 80px;
     height: 80px;
 }
+
 .info__a__ingresar {
     background: #77acdf;
     flex-direction: column;
@@ -75,18 +78,23 @@ main>* {
 }
 
 .info__a__mostrar {
-    flex-direction: column;
-    
     background: #eb73ef;
-
+    flex-direction: column;
+    padding: 5% 3% 3%;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
 }
 
 .botones {
     justify-content: center;
 }
 
-.parrafo{
-    text-align:left;
+.parrafo {
+    text-align: left;
+    overflow:hidden;
+  margin:50px auto;
+  display:block
 }
 
 textarea {
