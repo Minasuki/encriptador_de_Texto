@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge ONE Encriptador y desicriptador de Texto</title>
     <link rel="StyleSheet" href="./css/estilos.css" type="text/css" media="screen">
+    
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         </section>
 
         <section class="info__a__ingresar">
-            <textarea class="parrafo" id="tex" name="comentario" rows="10" cols="20"></textarea>
+            <textarea class="parrafo" id="tex" rows="1" cols="33" placeholder="Ingrese el texto aquí"></textarea>
 
             <div class="botones">
                 <div class="btn__Encriptar">
@@ -27,21 +28,25 @@
                 <div class="btn__Desencriptar">
                     <button class="btn boton">Desencriptar</button>
                 </div>
-
             </div>
         </section>
 
         <section class="info__a__mostrar">
-            <textarea placeholder='Textarea' id="info" name="comentario" rows="1" ></textarea>
+            <textarea class="parrafo__info" id="info" rows="1" cols="33"></textarea>
 
             <div class="btn__Copiar">
                 <button class="btn boton">copiar</button>
             </div>
         </section>
 
+        
+
     </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js"></script>
+    <script src="./js/textArea.js"></script>
     <script src="./js/btnEncriptar.js"></script>
-    <script src="js/textArea.js"></script>
+    
 </body>
 
 </html>

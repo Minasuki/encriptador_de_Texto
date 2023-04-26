@@ -78,35 +78,21 @@ main>* {
 }
 
 .info__a__mostrar {
-    background: #eb73ef;
     flex-direction: column;
     padding: 5% 3% 3%;
     position: relative;
     flex: 1;
     max-width: 100%;
+    background-color: #d1d1e3;
 }
 
 .botones {
     justify-content: center;
 }
 
-.parrafo {
-    text-align: left;
-    overflow:hidden;
-  margin:50px auto;
-  display:block
-}
 
-textarea {
-    background-color: transparent;
-    border: none;
-    scrollbar-arrow-color: #000066;
-    scrollbar-base-color: #000033;
-    scrollbar-track-color: #666633;
-    scrollbar-face-color: #cc9933;
-    scrollbar-shadow-color: #DDDDDD;
-    scrollbar-highlight-color: #CCCCCC;
-}
+
+
 
 /* ///////////////////////  CSS Para Los Botones  ////////////////////////// */
 .btn {
@@ -154,4 +140,7 @@ textarea {
 
 .boton:hover {
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.parrafo__info{
+    border-radius: 10px;
 }
