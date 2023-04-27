@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700&display=swap');
-
-:root {
-    --padding-container: 100px 0;
-    --color-title: #001A49;
-}
-
-/* ///////////////////  CSS para no tener scrol  //////////////////// */
-html,
+/*html,
 body {
     padding: 0;
     margin: 0;
@@ -22,7 +14,7 @@ main {
     max-width: 100%;
 }
 
-/* ///////////////////////////  CSS para definir los tamaños de las cajas  ////////////////////////////////////// */
+/* ///////////////////////////  CSS para definir los tamaños de las cajas  ////////////////////////////////////// *//*
 
 main>.logo {
     flex: 0 0 10%;
@@ -48,8 +40,8 @@ main>* {
 ::after {
     box-sizing: border-box;
 }
-
-/* //////////////////////////////////////////////////////////////////// */
+*/
+/* //////////////////////////////////////////////////////////////////// *//*
 .info__a__ingresar,
 .info__a__mostrar,
 .logo,
@@ -93,8 +85,8 @@ main>* {
 
 
 
-
-/* ///////////////////////  CSS Para Los Botones  ////////////////////////// */
+*/
+/* ///////////////////////  CSS Para Los Botones  ////////////////////////// *//*
 .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -143,4 +135,4 @@ main>* {
 }
 .parrafo__info{
     border-radius: 10px;
-}
+}*/
