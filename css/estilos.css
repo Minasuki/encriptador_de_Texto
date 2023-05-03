@@ -160,5 +160,15 @@ font-style: normal;
 font-weight: 400;
 font-size: 32px;
 line-height: 150%;
-   
+   background-color: #f3f5fc;
+}
+
+.parrafo__inicial:playing{
+    color: blue;
+}
+
+.parrafo__inicial:focus,
+.parrafo__inicial:active{
+border: none;
+outline: none;
 }
