@@ -142,10 +142,23 @@ main>* {
     padding: 0;
 }
 
-main{
+main{/*equivale a container*/
     position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(../img/hd-wallpaper-g8a826172f_1920.jpg);
 }
 
+.parrafo__inicial{/*quibale a texto del textarea*/
+position: absolute;
+width: 40%;
+height: 60%;
+left: 12%;
+top: 15%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+   
+}
