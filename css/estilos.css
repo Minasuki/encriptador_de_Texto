@@ -14,7 +14,8 @@ main {
     max-width: 100%;
 }
 
-/* ///////////////////////////  CSS para definir los tamaños de las cajas  ////////////////////////////////////// *//*
+/* ///////////////////////////  CSS para definir los tamaños de las cajas  ////////////////////////////////////// */
+/*
 
 main>.logo {
     flex: 0 0 10%;
@@ -41,7 +42,8 @@ main>* {
     box-sizing: border-box;
 }
 */
-/* //////////////////////////////////////////////////////////////////// *//*
+/* //////////////////////////////////////////////////////////////////// */
+/*
 .info__a__ingresar,
 .info__a__mostrar,
 .logo,
@@ -86,7 +88,8 @@ main>* {
 
 
 */
-/* ///////////////////////  CSS Para Los Botones  ////////////////////////// *//*
+/* ///////////////////////  CSS Para Los Botones  ////////////////////////// */
+/*
 .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -137,43 +140,53 @@ main>* {
     border-radius: 10px;
 }*/
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-main{/*equivale a container*/
+main {
+    /*equivale a container*/
     position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(../img/hd-wallpaper-g8a826172f_1920.jpg);
 }
 
-.parrafo__inicial{/*quibale a texto del textarea*/
-position: absolute;
-width: 40%;
-height: 60%;
-left: 12%;
-top: 15%;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 150%;
-   background-color: #f3f5fc;
+.posicion__logo{
+position: relative;
+width: 8%;
+top: 0%;
+left: 0%;
+
 }
 
-.parrafo__inicial:playing{
+.parrafo__inicial {
+    /*quibale a texto del textarea*/
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+}
+
+.parrafo__inicial:playing {
     color: blue;
 }
 
 .parrafo__inicial:focus,
-.parrafo__inicial:active{
-border: none;
-outline: none;
+.parrafo__inicial:active {
+    border: none;
+    outline: none;
 }
 
-.terminos{
+.terminos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -185,7 +198,7 @@ outline: none;
     top: 80%;
 }
 
-.terminos p{
+.terminos p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -196,4 +209,15 @@ outline: none;
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
 }
