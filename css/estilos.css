@@ -139,6 +139,7 @@ main>* {
 .parrafo__info{
     border-radius: 10px;
 }*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 * {
     margin: 0;
@@ -152,6 +153,29 @@ main {
     height: 100vh;
     background-image: url(../img/hd-wallpaper-g8a826172f_1920.jpg);
 }
+/* /////////////////Codigo para el boton//////////////////// */
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.btn {
+    background-color: transparent;
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+/* ////////////////////// /////////////////////*/
 
 .posicion__logo{
 position: relative;
@@ -211,13 +235,53 @@ left: 0%;
     flex-grow: 0;
 }
 
-.botones{
-    display: flex;
-    flex-direction: row;
-    align-items: self-start;
-    padding: 1% 0;
-    position: absolute;
-    width: 80%;
-    left: 12%;
-    top: 82%;
+
+
+.boton {
+	
+    color: #242cc8;
+	transition: all 0.8s;
+	position: relative;
+    border: 0;
+    
 }
+
+.boton::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.8s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color:#242cc8;
+	border-bottom-color: #242cc8;
+	transform: scale(0.1, 1);
+}
+.boton:hover::before {
+    letter-spacing: 2px;
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.boton::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.8s;
+	background-color: rgba(185, 184, 227, 0.1);
+}
+.boton:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+/*40:20*/
