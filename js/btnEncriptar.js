@@ -43,12 +43,12 @@ function ajaxInfo(boleano) {
 function copiarAlPortapapeles() {
     let text = document.getElementById("info");
     navigator.clipboard.writeText(text.textContent);
-    Swal.fire({
+  /*  Swal.fire({ //es para una alerta que se vea bien
         icon: 'error',
         title: 'Oops...',
         text: 'Something went wrong!',
         footer: '<a href="">Why do I have this issue?</a>'
-      })
+      })*/
 }
 
 function encriptar() {
