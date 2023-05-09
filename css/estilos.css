@@ -12,9 +12,10 @@ main {
     height: 100vh;
     background-image: url(../img/hd-wallpaper-g8a826172f_1920.jpg);
 }
+
 /* /////////////////Codigo para el boton//////////////////// */
 
-.botones{
+.botones {
     display: flex;
     flex-direction: row;
     align-items: self-start;
@@ -27,11 +28,11 @@ main {
 
 .btn {
     background-color: transparent;
-	line-height: 50px;
-	height: 50px;
-	text-align: center;
-	width: 250px;
-	cursor: pointer;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 21px;
@@ -41,11 +42,11 @@ main {
 
 /* ////////////////////// /////////////////////*/
 
-.posicion__logo{
-position: relative;
-width: 8%;
-top: 0%;
-left: 0%;
+.posicion__logo {
+    position: relative;
+    width: 8%;
+    top: 0%;
+    left: 0%;
 
 }
 
@@ -102,61 +103,65 @@ left: 0%;
 
 
 .boton {
-	
+
     color: #dad8d8;
-	transition: all 0.8s;
-	position: relative;
+    transition: all 0.8s;
+    position: relative;
     border: 0;
     color: #242cc8;
 }
 
 .boton::before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.8s;
-	border-top-width: 2px;
-	border-bottom-width: 2px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-top-color:#242cc8;
-	border-bottom-color: #242cc8;
-	transform: scale(0.1, 1);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.8s;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #242cc8;
+    border-bottom-color: #242cc8;
+    transform: scale(0.1, 1);
 }
+
 .boton:hover::before {
     letter-spacing: 2px;
-	opacity: 1;	
-	transform: scale(1, 1);	
+    opacity: 1;
+    transform: scale(1, 1);
 }
+
 .boton::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.8s;
-	background-color:rgba(107, 167, 205, 0.2);
-    
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.8s;
+    background-color: rgba(107, 167, 205, 0.2);
+
 }
+
 .boton:hover::after {
-	opacity: 0;	
-	transform: scale(0.1, 1);
+    opacity: 0;
+    transform: scale(0.1, 1);
 }
+
 /*45:20*/
 
-.info__a__mostrar{
+.info__a__mostrar {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     position: absolute;
-    width:30%;
+    width: 30%;
     height: 90%;
     left: 60%;
     top: 5%;
@@ -165,7 +170,7 @@ left: 0%;
     border-radius: 10px;
 }
 
-.mensaje{
+.mensaje {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,7 +183,7 @@ left: 0%;
     text-align: center;
 }
 
-.mensaje h2{
+.mensaje h2 {
     width: 60%;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
@@ -189,7 +194,7 @@ left: 0%;
     color: #343a40;
 }
 
-.mensaje p{
+.mensaje p {
     width: 80%;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
@@ -199,4 +204,58 @@ left: 0%;
     text-align: center;
     columns: #494949;
 }
-/*57:43*/
+
+.info__a__mostrar img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+/*  Responsive design  */
+@media(max-width: 57.5em) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info__a__ingresar {
+        width: 100%;
+    }
+
+    .parrafo__inicial {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .terminos p{
+        font-size: 16px;
+    }
+    .boton{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .info__a__mostrar{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .parrafo__info{
+        width: 100%;
+        top: 5%;
+    }
+.info__a__mostrar img{
+    top: 0;
+    display: none;
+    visibility: hidden;
+}
+}
