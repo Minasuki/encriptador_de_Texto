@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 main {
     /*equivale a container*/
     position: relative;
@@ -235,27 +239,32 @@ main {
         left: 10%;
         top: 67%;
     }
-    .terminos p{
+
+    .terminos p {
         font-size: 16px;
     }
-    .boton{
+
+    .boton {
         width: 80%;
         left: 10%;
         top: 70%;
     }
-    .info__a__mostrar{
+
+    .info__a__mostrar {
         width: 80%;
         height: 15%;
         left: 10%;
         top: 80%;
     }
-    .parrafo__info{
+
+    .parrafo__info {
         width: 100%;
         top: 5%;
     }
-.info__a__mostrar img{
-    top: 0;
-    display: none;
-    visibility: hidden;
-}
+
+    .info__a__mostrar img {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
 }
