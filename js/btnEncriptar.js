@@ -77,11 +77,15 @@ function encriptar() {
       resultado.innerHTML = '';
       resultado.innerHTML = arr.join('');*/
 
-      //////////////////  Segunda vercion para cifrar ///////////////////////////////////////
+    //////////////////  Segunda vercion para cifrar ///////////////////////////////////////
     let resultado = document.getElementById("info");//es el texArea del texto encriptado
-        resultado.innerHTML = '';
+    resultado.innerHTML = '';
     let datosDelTextarea = document.getElementById("tex").value;// texArea del texto que se encriptara
     let guardarTexCifrado = '';//Aqui se guardara el texto cifrado
+
+    let tituloDelParrafo = document.getElementById("titulo__mensaje");
+    let YParrafo = document.getElementById("parrafo");
+    let muñeco = document.getElementById("muñeco");
 
     let textoCifrado = datosDelTextarea//los datos del texArea seran remplazados y guardados en textoCifrado.
         .replace(/e/gi, "enter")
@@ -92,6 +96,9 @@ function encriptar() {
 
     if (textoCifrado.length != 0) {// es para saber si esta vacio
         guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
+        tituloDelParrafo.textContent = '';
+        YParrafo.textContent = '';          //propiedades para dejar el blanco el campo de desencriptado
+        muñeco.src = null;
     } else {//si esta vacio el texArea
         Swal.fire({ //es para una alerta que se vea bien
             icon: 'error',
@@ -104,60 +111,67 @@ function encriptar() {
 }
 
 function desencriptar() {
-  /*  let resultado = document.getElementById("info");
-
-    let datosDelTextarea = document.getElementById("tex").value;
-    const arr = datosDelTextarea.split('');
-
-    for (let index = 0; index < arr.length; index++) {
-        if (arr[index] === 'a' && arr[index + 1] === 'i') {
-            delete (arr[index + 1]);
-
-        }
-        if (arr[index] === 'e' && arr[index + 1] === 'n' && arr[index + 2] === 't'
-            && arr[index + 3] === 'e' && arr[index + 4] === 'r') {
-            delete (arr[index + 1]);
-            delete (arr[index + 2]);
-            delete (arr[index + 3]);
-            delete (arr[index + 4]);
-        }
-        if (arr[index] === 'i' && arr[index + 1] === 'm' && arr[index + 2] === 'e'
-            && arr[index + 3] === 's') {
-            delete (arr[index + 1]);
-            delete (arr[index + 2]);
-            delete (arr[index + 3]);
-        }
-        if (arr[index] === 'o' && arr[index + 1] === 'b' && arr[index + 2] === 'e'
-            && arr[index + 3] === 'r') {
-            delete (arr[index + 1]);
-            delete (arr[index + 2]);
-            delete (arr[index + 3]);
-        }
-        if (arr[index] === 'u' && arr[index + 1] === 'f' && arr[index + 2] === 'a'
-            && arr[index + 3] === 't') {
-            delete (arr[index + 1]);
-            delete (arr[index + 2]);
-            delete (arr[index + 3]);
-        }
-    }
-    resultado.innerHTML = '';
-    resultado.innerHTML = arr.join('');*/
+    /*  let resultado = document.getElementById("info");
+  
+      let datosDelTextarea = document.getElementById("tex").value;
+      const arr = datosDelTextarea.split('');
+  
+      for (let index = 0; index < arr.length; index++) {
+          if (arr[index] === 'a' && arr[index + 1] === 'i') {
+              delete (arr[index + 1]);
+  
+          }
+          if (arr[index] === 'e' && arr[index + 1] === 'n' && arr[index + 2] === 't'
+              && arr[index + 3] === 'e' && arr[index + 4] === 'r') {
+              delete (arr[index + 1]);
+              delete (arr[index + 2]);
+              delete (arr[index + 3]);
+              delete (arr[index + 4]);
+          }
+          if (arr[index] === 'i' && arr[index + 1] === 'm' && arr[index + 2] === 'e'
+              && arr[index + 3] === 's') {
+              delete (arr[index + 1]);
+              delete (arr[index + 2]);
+              delete (arr[index + 3]);
+          }
+          if (arr[index] === 'o' && arr[index + 1] === 'b' && arr[index + 2] === 'e'
+              && arr[index + 3] === 'r') {
+              delete (arr[index + 1]);
+              delete (arr[index + 2]);
+              delete (arr[index + 3]);
+          }
+          if (arr[index] === 'u' && arr[index + 1] === 'f' && arr[index + 2] === 'a'
+              && arr[index + 3] === 't') {
+              delete (arr[index + 1]);
+              delete (arr[index + 2]);
+              delete (arr[index + 3]);
+          }
+      }
+      resultado.innerHTML = '';
+      resultado.innerHTML = arr.join('');*/
 
     //////////////////  Segunda vercion para decifrar ///////////////////////////////////////
     let resultado = document.getElementById("info");//es el texArea del texto encriptado
-        resultado.innerHTML = '';
+    resultado.innerHTML = '';
     let datosDelTextarea = document.getElementById("tex").value;// texArea del texto que se encriptara
     let guardarTexCifrado = '';//Aqui se guardara el texto cifrado
 
+    let tituloDelParrafo = document.getElementById("titulo__mensaje");
+    let YParrafo = document.getElementById("parrafo");
+    let muñeco = document.getElementById("muñeco");
+
     let textoCifrado = datosDelTextarea//los datos del texArea seran remplazados y guardados en textoCifrado.
-    .replace(/enter/gi, "e")
-    .replace(/imes/gi, "i")
-    .replace(/ai/gi, "a")
-    .replace(/ober/gi, "o")
-    .replace(/ufat/gi, "u");
+        .replace(/enter/gi, "e")
+        .replace(/imes/gi, "i")
+        .replace(/ai/gi, "a")
+        .replace(/ober/gi, "o")
+        .replace(/ufat/gi, "u");
 
     if (textoCifrado.length != 0) {// es para saber si esta vacio
         guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
+        tituloDelParrafo.textContent = '';
+        YParrafo.textContent = '';          //propiedades para dejar el blanco el campo de desencriptado
+        muñeco.src = null;
     } else {//si esta vacio el texArea
         Swal.fire({ //es para una alerta que se vea bien
             icon: 'error',
