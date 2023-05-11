@@ -43,43 +43,68 @@ function ajaxInfo(boleano) {
 function copiarAlPortapapeles() {
     let text = document.getElementById("info");
     navigator.clipboard.writeText(text.textContent);
-  /*  Swal.fire({ //es para una alerta que se vea bien
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Something went wrong!',
-        footer: '<a href="">Why do I have this issue?</a>'
-      })*/
+    /*  Swal.fire({ //es para una alerta que se vea bien
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })*/
 }
 
 function encriptar() {
-    let resultado = document.getElementById("info");
+    /*  let resultado = document.getElementById("info");/////////////////  primera vercion para cifrar  /////////////////
+  
+      let datosDelTextarea = document.getElementById("tex").value;
+      const arr = datosDelTextarea.split('');
+  
+      for (let index = 0; index < arr.length; index++) {
+          if (arr[index] === 'a') {
+              arr[index] = 'ai';
+          }
+          if (arr[index] === 'e') {
+              arr[index] = 'enter';
+          }
+          if (arr[index] === 'i') {
+              arr[index] = 'imes';
+          }
+          if (arr[index] === 'o') {
+              arr[index] = 'ober';
+          }
+          if (arr[index] === 'u') {
+              arr[index] = 'ufat';
+          }
+      }
+      resultado.innerHTML = '';
+      resultado.innerHTML = arr.join('');*/
 
-    let datosDelTextarea = document.getElementById("tex").value;
-    const arr = datosDelTextarea.split('');
+      //////////////////  Segunda vercion para cifrar ///////////////////////////////////////
+    let resultado = document.getElementById("info");//es el texArea del texto encriptado
+        resultado.innerHTML = '';
+    let datosDelTextarea = document.getElementById("tex").value;// texArea del texto que se encriptara
+    let guardarTexCifrado = '';//Aqui se guardara el texto cifrado
 
-    for (let index = 0; index < arr.length; index++) {
-        if (arr[index] === 'a') {
-            arr[index] = 'ai';
-        }
-        if (arr[index] === 'e') {
-            arr[index] = 'enter';
-        }
-        if (arr[index] === 'i') {
-            arr[index] = 'imes';
-        }
-        if (arr[index] === 'o') {
-            arr[index] = 'ober';
-        }
-        if (arr[index] === 'u') {
-            arr[index] = 'ufat';
-        }
+    let textoCifrado = datosDelTextarea//los datos del texArea seran remplazados y guardados en textoCifrado.
+        .replace(/e/gi, "enter")
+        .replace(/i/gi, "imes")
+        .replace(/a/gi, "ai")
+        .replace(/o/gi, "ober")
+        .replace(/u/gi, "ufat");
+
+    if (textoCifrado.length != 0) {// es para saber si esta vacio
+        guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
+    } else {//si esta vacio el texArea
+        Swal.fire({ //es para una alerta que se vea bien
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Tienes que agregar un texto!',
+        });
     }
-    resultado.innerHTML = '';
-    resultado.innerHTML = arr.join('');
+
+    resultado.innerHTML = guardarTexCifrado;
 }
 
 function desencriptar() {
-    let resultado = document.getElementById("info");
+  /*  let resultado = document.getElementById("info");
 
     let datosDelTextarea = document.getElementById("tex").value;
     const arr = datosDelTextarea.split('');
@@ -116,5 +141,30 @@ function desencriptar() {
         }
     }
     resultado.innerHTML = '';
-    resultado.innerHTML = arr.join('');
+    resultado.innerHTML = arr.join('');*/
+
+    //////////////////  Segunda vercion para decifrar ///////////////////////////////////////
+    let resultado = document.getElementById("info");//es el texArea del texto encriptado
+        resultado.innerHTML = '';
+    let datosDelTextarea = document.getElementById("tex").value;// texArea del texto que se encriptara
+    let guardarTexCifrado = '';//Aqui se guardara el texto cifrado
+
+    let textoCifrado = datosDelTextarea//los datos del texArea seran remplazados y guardados en textoCifrado.
+    .replace(/enter/gi, "e")
+    .replace(/imes/gi, "i")
+    .replace(/ai/gi, "a")
+    .replace(/ober/gi, "o")
+    .replace(/ufat/gi, "u");
+
+    if (textoCifrado.length != 0) {// es para saber si esta vacio
+        guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
+    } else {//si esta vacio el texArea
+        Swal.fire({ //es para una alerta que se vea bien
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Tienes que agregar un texto!',
+        });
+    }
+
+    resultado.innerHTML = guardarTexCifrado;
 }
