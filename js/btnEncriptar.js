@@ -5,15 +5,20 @@
 
     encriptado.addEventListener('click', () => {
         ajaxInfo(true);
+        document.querySelector('.ocultar').style.display = 'block';
     });
 
     desencriptado.addEventListener('click', () => {
         ajaxInfo(false);
+        document.querySelector('.ocultar').style.display = 'block';
     });
 
     copiar.addEventListener('click', () => {
         copiarAlPortapapeles();
     });
+    
+    document.querySelector('.ocultar').style.display = 'none';
+
 })();
 
 function ajaxInfo(boleano) {
@@ -97,7 +102,7 @@ function encriptar() {
     if (textoCifrado.length != 0) {// es para saber si esta vacio
         guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
         tituloDelParrafo.textContent = '';
-        YParrafo.textContent = '';          //propiedades para dejar el blanco el campo de desencriptado
+        YParrafo.textContent = '';          //propiedades para dejar en blanco el campo de desencriptado
         muñeco.src = null;
     } else {//si esta vacio el texArea
         Swal.fire({ //es para una alerta que se vea bien
@@ -170,7 +175,7 @@ function desencriptar() {
     if (textoCifrado.length != 0) {// es para saber si esta vacio
         guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
         tituloDelParrafo.textContent = '';
-        YParrafo.textContent = '';          //propiedades para dejar el blanco el campo de desencriptado
+        YParrafo.textContent = '';          //propiedades para dejar en blanco el campo de desencriptado
         muñeco.src = null;
     } else {//si esta vacio el texArea
         Swal.fire({ //es para una alerta que se vea bien
