@@ -6,17 +6,19 @@
     encriptado.addEventListener('click', () => {
         ajaxInfo(true);
         document.querySelector('.ocultar').style.display = 'block';
+        document.getElementById('muñeco').style.visibility = "hidden";
     });
 
     desencriptado.addEventListener('click', () => {
         ajaxInfo(false);
         document.querySelector('.ocultar').style.display = 'block';
+        document.getElementById('muñeco').style.visibility = "hidden";
     });
 
     copiar.addEventListener('click', () => {
         copiarAlPortapapeles();
     });
-    
+
     document.querySelector('.ocultar').style.display = 'none';
 
 })();
@@ -90,7 +92,7 @@ function encriptar() {
 
     let tituloDelParrafo = document.getElementById("titulo__mensaje");
     let YParrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
+
 
     let textoCifrado = datosDelTextarea//los datos del texArea seran remplazados y guardados en textoCifrado.
         .replace(/e/gi, "enter")
@@ -103,7 +105,7 @@ function encriptar() {
         guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
         tituloDelParrafo.textContent = '';
         YParrafo.textContent = '';          //propiedades para dejar en blanco el campo de desencriptado
-        muñeco.src = null;
+
     } else {//si esta vacio el texArea
         Swal.fire({ //es para una alerta que se vea bien
             icon: 'error',
@@ -163,7 +165,6 @@ function desencriptar() {
 
     let tituloDelParrafo = document.getElementById("titulo__mensaje");
     let YParrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
 
     let textoCifrado = datosDelTextarea//los datos del texArea seran remplazados y guardados en textoCifrado.
         .replace(/enter/gi, "e")
@@ -176,7 +177,7 @@ function desencriptar() {
         guardarTexCifrado = textoCifrado;// aqui se guarda el texto ya cifrado para posteriormente ser imprimido:3
         tituloDelParrafo.textContent = '';
         YParrafo.textContent = '';          //propiedades para dejar en blanco el campo de desencriptado
-        muñeco.src = null;
+
     } else {//si esta vacio el texArea
         Swal.fire({ //es para una alerta que se vea bien
             icon: 'error',
