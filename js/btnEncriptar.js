@@ -5,21 +5,24 @@
 
     encriptado.addEventListener('click', () => {
         ajaxInfo(true);
-        document.querySelector('.ocultar').style.display = 'block';
-        document.getElementById('muñeco').style.visibility = "hidden";
+        document.querySelector('.ocultar__boton__copiar').style.display = 'block';// hacer invisible el boton copiar
+        document.getElementById('muñeco').style.visibility = "hidden";// hacer invisible la img
+        document.querySelector('.parrafo__info').style.display = 'block';// hacer invisible el textArea parrafo__info
     });
 
     desencriptado.addEventListener('click', () => {
         ajaxInfo(false);
-        document.querySelector('.ocultar').style.display = 'block';
-        document.getElementById('muñeco').style.visibility = "hidden";
+        document.querySelector('.ocultar__boton__copiar').style.display = 'block';// hacer invisible el boton copiar
+        document.getElementById('muñeco').style.visibility = "hidden";// hacer invisible la img
+        document.querySelector('.parrafo__info').style.display = 'block';// hacer invisible el textArea parrafo__info
     });
 
     copiar.addEventListener('click', () => {
         copiarAlPortapapeles();
     });
 
-    document.querySelector('.ocultar').style.display = 'none';
+    document.querySelector('.ocultar__boton__copiar').style.display = 'none';
+    document.querySelector('.parrafo__info').style.display = 'none';
 
 })();
 
