@@ -115,6 +115,8 @@ function encriptar() {
             title: 'Oops...',
             text: 'Tienes que agregar un texto!',
         });
+        tituloDelParrafo.textContent = '';
+        YParrafo.textContent = ''; 
     }
 
     resultado.innerHTML = guardarTexCifrado;
@@ -187,6 +189,8 @@ function desencriptar() {
             title: 'Oops...',
             text: 'Tienes que agregar un texto!',
         });
+        tituloDelParrafo.textContent = '';
+        YParrafo.textContent = ''; 
     }
 
     resultado.innerHTML = guardarTexCifrado;
