@@ -14,7 +14,7 @@ main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/hd-wallpaper-g8a826172f_1920.jpg);
+    background-image: url(../img/woods-g1ea8ff3d5_1920.jpg);
 }
 
 /* /////////////////section de info__a__ingresar //////////////////// */
@@ -28,12 +28,12 @@ main {
     height: 95%;
     left: 10%;
     top: 2%;
-    
+
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
-/* /////////////////Codigo para el boton//////////////////// */
+/* /////////////////  Estilo universal para la el <di> botones y el btn de <button>  //////////////////// */
 
 .botones {
     display: flex;
@@ -61,27 +61,25 @@ main {
     text-align: center;
 }
 
-/* ////////////////////// /////////////////////*/
+/* ////////////////////// Logo /////////////////////*/
 
 .posicion__logo {
     position: relative;
     width: 8%;
     top: 0%;
     left: 0%;
-
 }
 
+/* ////////////////////// TextArea donde se ingresa la informacion /////////////////////*/
 .parrafo__inicial {
-    /*equibale a texto del textarea*/
     position: absolute;
     width: 80%;
     height: 70%;
     left: 10%;
     top: 10%;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 150%;
     background-color: #f3f5fc;
 }
@@ -95,18 +93,21 @@ main {
     border: none;
     outline: none;
 }
-.parrafo__final{
+
+/* ////////////////////// TextArea donde solo se muestra la informacion cifrada o desifrada /////////////////////*/
+.parrafo__final {
     position: absolute;
     width: 90%;
     height: 75%;
     left: 5%;
     top: 5%;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 150%;
 }
+
+/* ////////////////////// etiqueta <p> donde estan los terminos de uso /////////////////////*/
 .terminos {
     display: flex;
     flex-direction: row;
@@ -120,27 +121,26 @@ main {
 }
 
 .terminos p {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: rgb(25, 25, 25);
-    opacity: 0.8;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 
-
+/* ////////////////////// clase para el estilo espesifico de los botones /////////////////////*/
 .boton {
 
     color: #dad8d8;
     transition: all 0.8s;
     position: relative;
     border: 0;
-    color: #242cc8;
+    color: #0310fd;
 }
 
 .boton::before {
@@ -157,8 +157,6 @@ main {
     border-bottom-width: 2px;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-top-color: #242cc8;
-    border-bottom-color: #242cc8;
     transform: scale(0.1, 1);
 }
 
@@ -177,7 +175,7 @@ main {
     height: 100%;
     z-index: 1;
     transition: all 0.8s;
-    background-color: rgba(107, 167, 205, 0.2);
+    background-color: rgba(241, 27, 27, 0.289);
 
 }
 
@@ -244,6 +242,63 @@ main {
     top: 15%;
 }
 
+@media(max-width: 1280px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+.posicion__logo{
+    position:relative;
+    width: 6%;
+    top: 0%;
+    left: 0%;
+}
+    .info__a__ingresar {
+        width: 100%;
+    }
+
+    .parrafo__inicial {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+
+    .terminos p {
+        font-size: 16px;
+    }
+
+    .boton {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .info__a__mostrar {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+
+    .parrafo__final {
+        width: 100%;
+        top: 5%;
+    }
+
+    .info__a__mostrar img {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
+
 /*  Responsive design  */
 @media(max-width: 57.5em) {
     main {
@@ -296,4 +351,3 @@ main {
         visibility: hidden;
     }
 }
-
