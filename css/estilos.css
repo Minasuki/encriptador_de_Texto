@@ -24,12 +24,12 @@ main {
     justify-content: space-between;
     flex-direction: column;
     position: absolute;
-    width: 45%;
-    height: 90%;
+    width: 50%;
+    height: 95%;
     left: 10%;
-    top: 5%;
-    background: #fff;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    top: 2%;
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
@@ -72,12 +72,12 @@ main {
 }
 
 .parrafo__inicial {
-    /*quibale a texto del textarea*/
+    /*equibale a texto del textarea*/
     position: absolute;
-    width: 40%;
-    height: 60%;
-    left: 12%;
-    top: 15%;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 10%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -95,7 +95,18 @@ main {
     border: none;
     outline: none;
 }
-
+.parrafo__final{
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    left: 5%;
+    top: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
 .terminos {
     display: flex;
     flex-direction: row;
@@ -183,9 +194,9 @@ main {
     flex-direction: column;
     position: absolute;
     width: 30%;
-    height: 90%;
+    height: 95%;
     left: 65%;
-    top: 5%;
+    top: 2%;
     background: #fff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
@@ -274,7 +285,7 @@ main {
         top: 80%;
     }
 
-    .parrafo__info {
+    .parrafo__final {
         width: 100%;
         top: 5%;
     }

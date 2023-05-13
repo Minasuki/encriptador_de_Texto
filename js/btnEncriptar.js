@@ -7,14 +7,14 @@
         ajaxInfo(true);
         document.querySelector('.ocultar__boton__copiar').style.display = 'block';// hacer invisible el boton copiar
         document.getElementById('muñeco').style.visibility = "hidden";// hacer invisible la img
-        document.querySelector('.parrafo__info').style.display = 'block';// hacer invisible el textArea parrafo__info
+        document.querySelector('.parrafo__final').style.display = 'block';// hacer invisible el textArea parrafo__final
     });
 
     desencriptado.addEventListener('click', () => {
         ajaxInfo(false);
         document.querySelector('.ocultar__boton__copiar').style.display = 'block';// hacer invisible el boton copiar
         document.getElementById('muñeco').style.visibility = "hidden";// hacer invisible la img
-        document.querySelector('.parrafo__info').style.display = 'block';// hacer invisible el textArea parrafo__info
+        document.querySelector('.parrafo__final').style.display = 'block';// hacer invisible el textArea parrafo__final
     });
 
     copiar.addEventListener('click', () => {
@@ -22,7 +22,7 @@
     });
 
     document.querySelector('.ocultar__boton__copiar').style.display = 'none';
-    document.querySelector('.parrafo__info').style.display = 'none';
+    document.querySelector('.parrafo__final').style.display = 'none';
 
 })();
 
