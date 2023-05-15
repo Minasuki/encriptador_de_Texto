@@ -65,9 +65,11 @@ main {
 
 .posicion__logo {
     position: relative;
-    width: 8%;
-    top: 0%;
-    left: 0%;
+    width: 2%;
+    left: 2%;
+    top: 3%;
+    height: 3%;
+    margin: 10px;
 }
 
 /* ////////////////////// TextArea donde se ingresa la informacion /////////////////////*/
@@ -249,13 +251,6 @@ main {
         flex-wrap: wrap;
     }
 
-    .posicion__logo {
-        position: relative;
-        width: 7%;
-        top: 0%;
-        left: 0%;
-    }
-
     .info__a__ingresar {
         width: 49%;
         left: 7%;
@@ -272,14 +267,9 @@ main {
         flex-direction: column;
         flex-wrap: wrap;
     }
-
-    .posicion__logo {
-        position: relative;
-        width: 7%;
-        top: 0%;
-        left: 0%;
-    }
-
+ .posicion__logo{
+    width: 3%;
+ }
     .info__a__ingresar {
         width: 100%;
         height: 50%;
@@ -338,7 +328,10 @@ main {
         height: 60%;
         left: 0;
     }
-
+.posicion__logo{
+    width: 5%;
+    left: 0%;
+}
     .parrafo__inicial {
         width: 80%;
         height: 70%;
