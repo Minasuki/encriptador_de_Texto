@@ -62,31 +62,6 @@ function copiarAlPortapapeles() {
 }
 
 function encriptar() {
-    /*  let resultado = document.getElementById("info");/////////////////  primera vercion para cifrar  /////////////////
-  
-      let datosDelTextarea = document.getElementById("tex").value;
-      const arr = datosDelTextarea.split('');
-  
-      for (let index = 0; index < arr.length; index++) {
-          if (arr[index] === 'a') {
-              arr[index] = 'ai';
-          }
-          if (arr[index] === 'e') {
-              arr[index] = 'enter';
-          }
-          if (arr[index] === 'i') {
-              arr[index] = 'imes';
-          }
-          if (arr[index] === 'o') {
-              arr[index] = 'ober';
-          }
-          if (arr[index] === 'u') {
-              arr[index] = 'ufat';
-          }
-      }
-      resultado.innerHTML = '';
-      resultado.innerHTML = arr.join('');*/
-
     //////////////////  Segunda vercion para cifrar ///////////////////////////////////////
     let resultado = document.getElementById("info");//es el texArea del texto encriptado
     resultado.innerHTML = '';
@@ -123,45 +98,6 @@ function encriptar() {
 }
 
 function desencriptar() {
-    /*  let resultado = document.getElementById("info");
-  
-      let datosDelTextarea = document.getElementById("tex").value;
-      const arr = datosDelTextarea.split('');
-  
-      for (let index = 0; index < arr.length; index++) {
-          if (arr[index] === 'a' && arr[index + 1] === 'i') {
-              delete (arr[index + 1]);
-  
-          }
-          if (arr[index] === 'e' && arr[index + 1] === 'n' && arr[index + 2] === 't'
-              && arr[index + 3] === 'e' && arr[index + 4] === 'r') {
-              delete (arr[index + 1]);
-              delete (arr[index + 2]);
-              delete (arr[index + 3]);
-              delete (arr[index + 4]);
-          }
-          if (arr[index] === 'i' && arr[index + 1] === 'm' && arr[index + 2] === 'e'
-              && arr[index + 3] === 's') {
-              delete (arr[index + 1]);
-              delete (arr[index + 2]);
-              delete (arr[index + 3]);
-          }
-          if (arr[index] === 'o' && arr[index + 1] === 'b' && arr[index + 2] === 'e'
-              && arr[index + 3] === 'r') {
-              delete (arr[index + 1]);
-              delete (arr[index + 2]);
-              delete (arr[index + 3]);
-          }
-          if (arr[index] === 'u' && arr[index + 1] === 'f' && arr[index + 2] === 'a'
-              && arr[index + 3] === 't') {
-              delete (arr[index + 1]);
-              delete (arr[index + 2]);
-              delete (arr[index + 3]);
-          }
-      }
-      resultado.innerHTML = '';
-      resultado.innerHTML = arr.join('');*/
-
     //////////////////  Segunda vercion para decifrar ///////////////////////////////////////
     let resultado = document.getElementById("info");//es el texArea del texto encriptado
     resultado.innerHTML = '';
